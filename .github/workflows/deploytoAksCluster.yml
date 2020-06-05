@@ -33,7 +33,7 @@ jobs:
     - uses: azure/k8s-create-secret@v1
       with:
         namespace: k8s2f48
-        container-registry-url: blaizek8s.azurecr.io
+        container-registry-url: conregis.azurecr.io
         container-registry-username: ${{ secrets.acr_blaizek8s_username }}
         container-registry-password: ${{ secrets.acr_blaizek8s_password }}
         secret-name: k8sdockerauth
